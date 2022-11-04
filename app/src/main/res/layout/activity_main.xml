@@ -7,12 +7,45 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/result"
+        android:layout_width="145dp"
+        android:layout_height="65dp"
+        android:text="result"
+        tools:layout_editor_absoluteX="87dp"
+        tools:layout_editor_absoluteY="96dp" />
+
+    <EditText
+        android:id="@+id/input1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:ems="10"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="33dp"
+        tools:layout_editor_absoluteY="312dp" />
+
+    <EditText
+        android:id="@+id/input2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="98dp"
+        tools:layout_editor_absoluteY="394dp" />
+
+    <TextView
+        android:id="@+id/textView_subtract"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:text="-"
+        tools:layout_editor_absoluteX="132dp"
+        tools:layout_editor_absoluteY="226dp" />
+
+    <Button
+        android:id="@+id/button_Subtract"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Subtract"
+        tools:layout_editor_absoluteX="140dp"
+        tools:layout_editor_absoluteY="541dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
