@@ -8,8 +8,10 @@
 
     <TextView
         android:id="@+id/result"
-        android:layout_width="193dp"
+        android:layout_width="match_parent"
         android:layout_height="82dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
         android:text="result"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -18,13 +20,14 @@
         app:layout_constraintVertical_bias="0.56" />
 
     <EditText
-        android:id="@+id/input1"
+        android:id="@+id/firstNumber"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:hint="number 1"
         android:inputType="number"
         android:minHeight="48dp"
-        app:layout_constraintBottom_toTopOf="@+id/input2"
+        app:layout_constraintBottom_toTopOf="@+id/secondNumber"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
@@ -33,11 +36,12 @@
         tools:ignore="SpeakableTextPresentCheck" />
 
     <EditText
-        android:id="@+id/input2"
+        android:id="@+id/secondNumber"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="104dp"
         android:ems="10"
+        android:hint="number 2"
         android:inputType="number"
         android:minHeight="48dp"
         app:layout_constraintBottom_toTopOf="@+id/result"
@@ -52,14 +56,14 @@
         android:layout_height="35dp"
         android:layout_marginTop="112dp"
         android:text="-"
-        app:layout_constraintBottom_toTopOf="@+id/input1"
+        app:layout_constraintBottom_toTopOf="@+id/firstNumber"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/result"
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
-        android:id="@+id/button_Subtract"
+        android:id="@+id/subtract_Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="96dp"
@@ -68,5 +72,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/result" />
+
+    <TextView
+        android:id="@+id/minus"
+        android:layout_width="49dp"
+        android:layout_height="25dp"
+        android:text="-"
+        app:layout_constraintBottom_toTopOf="@+id/secondNumber"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstNumber" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
